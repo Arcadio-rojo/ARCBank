@@ -1,1 +1,95 @@
-<p>login works!</p>
+
+
+<div class = "login-container">
+  <div class = "login-form">
+
+
+    <div class="top-title-form">
+      <div class="logo-login-form">
+      <img
+          src="assets/images/Logo.png"
+           alt = "ARCBank Logo"
+           class = "brandlogo" />
+      </div>
+      <span class = "desktop-tagline ">Your Trustworthy Partner in Digital Finance</span>
+      <span class = "mobile-tagline "> Banking made simple </span>
+    </div>
+
+    <div class="form-container">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+      <div class="field-group">
+        <label for="username">Username</label>
+        <input
+          id="username"
+          type="text"
+          formControlName="username"
+          placeholder="Enter your username"/>
+      </div>
+
+      <div class="field-group">
+        <label for="password">Password</label>
+
+        <div class="password-wrapper">
+
+          <input
+            id="password"
+            [type]="showPassword ? 'text' : 'password'"
+            formControlName="password"
+            placeholder="Enter your password"
+          />
+
+          <button
+            type="button"
+            class="toggle-btn"
+            (click)="togglePasswordVisibility()"
+            [attr.aria-label]="showPassword ? 'Hide password' : 'Show password'"
+          >
+            <i
+              [class]="showPassword
+          ? 'fa-solid fa-eye-slash'
+          : 'fa-solid fa-eye'">
+            </i>
+          </button>
+
+        </div>
+      </div>
+
+      <div class="field-group row-group">
+        <div class="rememberme-field">
+          <label class="checkbox-label">
+            <input type="checkbox" formControlName="rememberMe"/>
+            <span> Rembember Me</span>
+          </label>
+        </div>
+        <a class="forgot-field" routerLink="/forgot-password"> Forgot Password?</a>
+
+      </div>
+
+      <div class="field-group">
+        <button type="submit" class="submit-btn" >
+          Sign in
+        </button>
+      </div>
+
+      <div class="register-container">
+        <span>Dont have an account? </span>
+        <a class = "register-field" routerLink="/register">Register</a>
+      </div>
+
+    </form>
+
+    </div>
+
+
+  </div>
+  <div class = "login-logo" >
+    <img
+      src = "assets/images/loginbackground.jpg"
+      alt = "Background Logo"
+      class ="loginbackground"
+    />
+
+  </div>
+
+</div>

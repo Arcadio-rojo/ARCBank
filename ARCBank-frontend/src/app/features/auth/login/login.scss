@@ -1,0 +1,291 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+.login-container {
+  display: flex;
+  flex-directory: row;
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0d2847;
+
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  height: 100dvh;
+  box-sizing: border-box;
+  }
+.logo-login-form img{
+  width: 20vw;
+  }
+
+.desktop-tagline {
+  display: inline;
+  }
+
+.mobile-tagline {
+  display: none;
+  }
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  flex: 1;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  }
+
+
+
+.top-title-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30vh;
+  color: white;
+  background: #0d2847;
+
+
+   span {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+  color: white;
+}
+
+.form-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.25rem;
+
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+
+  .forgot-field {
+    font-size: 0.85rem;
+    color: #0d2847;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.forgot-field{
+  color: white;
+  }
+
+
+.field-group.row-group {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  }
+
+
+
+.login-logo {
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginbackground {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.field-group > label {
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 0.02rem;
+  margin-top: 1rem;
+}
+
+.field-group > input {
+  width: 100%;
+  height: 45px;
+  padding: 0 12px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+
+
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper > input {
+  width: 100%;
+  height: 45px;
+  padding: 0 45px 0 12px;
+  box-sizing: border-box;
+
+  font-size: 14px;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.toggle-btn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 36px;
+  height: 36px;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #808080;
+}
+
+.toggle-btn i {
+  font-size: 15px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.toggle-btn:hover i {
+  transform: scale(1.15);
+}
+
+.toggle-btn:active i {
+  transform: scale(0.9);
+}
+
+.register-container{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin-top: 0.5rem;
+  gap: 8px;
+  }
+
+.register-field{
+  color: white;
+  }
+
+
+
+ .submit-btn{
+      width: 100%;
+      height: 7vh;
+      margin-top: 3rem;
+      cursor: pointer;
+      border-radius: 20px;
+      background: white;
+      color:black;
+      font-size: 17px;
+      }
+
+    .submit-btn:hover {
+      background: #0d2847;
+      color: white;
+      }
+
+@media (max-width: 768px) {
+    .login-container {
+      flex-directory: column;
+      background: white;
+      }
+
+    .login-form {
+        width: 100%;
+
+      }
+
+    .login-logo {
+        display: none;
+      }
+
+
+
+
+    .logo-login-form img{
+      width: 50vw;
+    }
+
+    .desktop-tagline {
+      display: none;
+      }
+
+    .mobile-tagline {
+      display: inline;
+
+      }
+
+    .field-group{
+      color: black;
+      }
+
+    .top-title-form {
+      border-bottom-left-radius: 40%;
+      border-bottom-right-radius: 40%;
+
+      }
+
+    .submit-btn {
+      background: #0d2847;
+      color: white;
+      }
+
+    .submit-btn:hover {
+        background: white;
+        color: black;
+      }
+
+    .register-container {
+      color: black;
+      }
+    .forgot-field{
+      color: red;
+      }
+
+    .register-field{
+      color: red;
+      }
+
+  }
